@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="container">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              </a>
+              <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="https://bulma.io/">
+                  Home
+                </a>
+                <a class="navbar-item" href="https://bulma.io/">
+                    Speaker
+                </a>
+                <a class="navbar-item" href="https://bulma.io/">
+                    Session Descriptions
+                </a>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>
+                          Tweet
+                        </span>
+                      </a>
+                    </p>
+                    <p class="control">
+                      <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.1/bulma-0.9.1.zip">
+                        <span class="icon">
+                          <i class="fas fa-download"></i>
+                        </span>
+                        <span>Download</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>  
+    <section class="hero is-medium is-link">
+        <div class="container">
+          <div class="hero-body">
+          <p class="title">
+            UX MOBILE IM * 
+          </p>
+          <p class="subtitle">
+            2015
+          </p>
+        </div>  
+    </div>   
+    </section>
+    <section class="info py-4">
+        <div class="container">
+            <div class="has-text-centered py-4 my-4">
+                <h1 class="title is-3 py-4"> Videos on tools & techniques to design great mobile UX </h1>
+                <h2 class="subtitle is-4"> Eight talks on mobile UX design </h2>   
+            </div>
+            <div class="columns pb-4">
+                <div class="column">
+                    <div class="content is-normal">
+                        <ul>
+                          <li>Design for dynamic inputs like touch screens, cameras, voice control and sensors.</li>
+                          <li>Create mobile tutorials that work by understanding the underlying principles.</li>
+                          <li>Debunk common excuses for not using progressive enhancement.</li>
+                          <li>Design less for screens and more for holistic experiences.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content is-normal">
+                        <ul>
+                          <li>Learn about atomic design—a methodology for creating robust design systems.</li>
+                          <li>Simplify your user’s journey with progressive enhancement.</li>
+                          <li>ake a fresh approach to solving problems and breaking away from the pack.</li>
+                          <li>Believe in your gut or the data? A guide to help the design process.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactsection has-background-danger my-5">
+        <div class="container mt-4">
+            <div class="box">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column is-8">
+                        Get lifetime access to all eight video recordings. If you’re part of a team, everyone gets access to the videos.
+                    </div>
+                    <div class="column is-4">
+                        <button class="button is-danger is-large">Normal</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>  
+    </section>
+    <section class="speaker has-background-danger">
+        <div class="container">
+            <div class="columns has-text-centered ">
+                <div class="column is-2">
+                    <figure class="image is-96x96">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                    </figure>  
+                </div>
+                <div class="column is-10 has-text-left">
+                    <h2 class="is-subtitle is-3"><a href="#">Adapting to Different Forms of Input</a></h2>
+                    <h1 class="title is-4"> Jason Grigsby </h1>
+                    <p>n addition to keyboards, we now have touch screens, cameras, voice control, and sensors as different kinds of inputs. We can’t know which inputs the user prefers to use until after we’ve tried designing with—and for—those inputs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+
+
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+  </script>
+  </body>
+</html>
