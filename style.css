@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+body{
+    background-color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    color:#313131;
+}
+
+a.navbar-item:hover{
+    color:#951a1d;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    height:120px;
+}
+
+span.icon{
+    color:#951a1d;
+}
+
+.hero{
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+p.promo{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+button.promo-btn{
+    background-color:#951a1d;
+    color:#eeeeee;
+    width:80%;
+    transition: all .4s ease-in-out;
+}
+
+button.promo-btn:hover{
+    color:#d6c2c2; 
+    transform: scale(1.05);
+}
+
+figure.image{
+    width:160px;
+    height: 140px;
+    
+}
+
+img{
+    border-radius: 5px;
+}
+
+.topic p{
+    color:#951a1d;
+}
+
+.topic p:hover{
+    color:#951a1d;
+    text-decoration:underline;
+}
+
+.footer{
+    background-color: #4e4b4b;
+}
+
+.footer p{
+    color:#cccaca;
+}
+
+.footer strong{
+    color:#cccaca;
+}
+
+.footer-img{
+    width:120px;
+    text-align:center
+}
+
+p.copyright{
+    font-size:12px;
+    font-style: italic;
+}
+
+a.email-link{
+    color:#951a1d;
+    font-weight:bold
+}
+
+@media screen and (min-width: 480px) {
+    button.promo-btn{
+        width:100%;
+    }
+
+    .speaker-title h1{
+        text-align: center;
+        font-weight:600;
+    }
+
+    .footer-questions p{
+        text-align: center
+    }
+
+}
