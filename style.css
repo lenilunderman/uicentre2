@@ -65,7 +65,7 @@ img{
 }
 
 .footer{
-    background-color: #4e4b4b;
+    background-color: #828282;
 }
 
 .footer p{
@@ -73,16 +73,16 @@ img{
 }
 
 .footer strong{
-    color:#cccaca;
+    color:#000000;
 }
 
 .footer-img{
-    width:120px;
+    width:160px;
     text-align:center
 }
 
 p.copyright{
-    font-size:12px;
+    font-size:14px;
     font-style: italic;
 }
 
@@ -91,7 +91,16 @@ a.email-link{
     font-weight:bold
 }
 
-@media screen and (min-width: 480px) {
+.container.my-4{
+   padding-right: 0px;
+}
+
+.box.my-4{
+    padding-right: 20px;
+}
+
+
+@media screen and (min-width: 479px) {
     button.promo-btn{
         width:100%;
     }
@@ -105,4 +114,17 @@ a.email-link{
         text-align: center
     }
 
+}
+
+@media screen and (max-width: 478px) and (min-width: 240px){
+    button.promo-btn{
+        width:100%;
+    }
+    footer p{
+        text-align: center;
+        padding-bottom: 10px;   
+    }
+    .media-left{
+        display: none;
+    }
 }
